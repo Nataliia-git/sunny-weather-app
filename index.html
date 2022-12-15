@@ -12,7 +12,7 @@
     />
     <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/styles.css" />
-    <title>Weather App</title>
+    <title>Always sunny weather application</title>
   </head>
 
   <body>
@@ -41,16 +41,16 @@
               <input
                 type="submit"
                 value="Current"
-                class="btn btn-success"
+                class="form-control btn btn-primary shadow-sm current"
                 id="location"
               />
             </div>
           </div>
         </form>
-        <h1 id="city">Paris, France</h1>
+        <h1 id="city"></h1>
         <ul>
           <li id="date"></li>
-          <li id="conditions">Sunny</li>
+          <li id="conditions"></li>
         </ul>
         <div class="row">
           <div class="col-6">
@@ -63,7 +63,8 @@
               <div class="float-left">
                 <span class="temperature" id="temperature">19</span
                 ><span class="units">
-                  <a>°C</a>
+                  <a href="#" id="celsius-link" class="active">°C</a> |
+                  <a href="#" id="fahreinheit-link">°F</a>
                 </span>
               </div>
             </div>
