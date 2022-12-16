@@ -1,16 +1,16 @@
 body {
   font-family: arial, sans-serif;
+  color: #272142;
 }
 .current {
   background-color: green;
 }
 
 h1 {
-  color: #7c7c7c;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
-  margin: 0;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -25,11 +25,15 @@ li {
   height: 19px;
   line-height: 1;
   list-style: none;
+  margin-bottom: 2px;
+}
+.dividing-line {
+  margin-top: 40px;
 }
 
 .weather-app {
   border: 1px solid #dadde1;
-  padding: 15px;
+  padding: 60px 30px;
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
