@@ -62,6 +62,10 @@ li {
 .search-form {
   margin-bottom: 20px;
 }
+.conditions:first-letter {
+  text-transform: capitalize;
+}
+
 .coder {
   text-align: center;
 }
