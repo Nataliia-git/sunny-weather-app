@@ -69,6 +69,21 @@ li {
 .conditions:first-letter {
   text-transform: capitalize;
 }
+.weather-forecast {
+  margin-top: 25px;
+  text-align: center;
+}
+.weather-forecast-day {
+  font-size: 18px;
+  font-weight: 600;
+}
+.weather-forecast-temperatures {
+  font-size: 14px;
+  font-weight: 400;
+}
+.weather-forecast-min-temperature {
+  opacity: 0.7;
+}
 
 .coder {
   text-align: center;
