@@ -104,6 +104,31 @@ function showCelsiusTemperature(event) {
   let temperatureValue = document.querySelector("#temperature");
   temperatureValue.innerHTML = Math.round(celsiusTemperature);
 }
+function showForecast() {
+  let forecastData = document.querySelector("#weather-forecast");
+  let days = ["Sun", "Mon", "Tue", "Wen"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-2">
+              <div class="weather-forecast-day">${day}</div>
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                alt="clear-sky-day"
+                width="45"
+              />
+              <div class="weather-forecast-temperatures">
+                <span class="weather-forecast-max-temperature"> 25°</span>
+                <span class="weather-forecast-min-temperature"> 20°</span>
+              </div>
+            </div>
+    `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastData.innerHTML = forecastHTML;
+}
 
 let celsiusTemperature = null;
 
@@ -121,5 +146,5 @@ function search(city) {
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
 }
-
+showForecast();
 search("Male");
