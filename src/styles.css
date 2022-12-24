@@ -1,14 +1,26 @@
 body {
   font-family: arial, sans-serif;
-  color: #272142;
+  color: #4f5356;
+}
+
+.search-box {
+  background-color: #f9f7fe;
+  border: 1px solid #666769;
+}
+
+.submit-button {
+  background-color: rgba(136, 93, 241, 70%);
+  border: 1px solid #666769;
 }
 .current {
-  background-color: green;
+  background-color: #7551d2;
+  border: 1px solid #666769;
 }
 
 h1 {
   font-size: 24px;
-  font-weight: 100;
+  font-weight: 600;
+  color: #7551d2;
   line-height: 28px;
   margin-bottom: 10px;
 }
@@ -19,24 +31,31 @@ ul {
 }
 
 li {
-  color: #7c7c7c;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 500;
   height: 19px;
   line-height: 1;
   list-style: none;
   margin-bottom: 2px;
+  font-style: italic;
 }
+
 .dividing-line {
   margin-top: 40px;
 }
 
 .weather-app {
-  border: 1px solid #dadde1;
+  border: 2px solid #7551d2;
   padding: 60px 30px;
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(186, 190, 245) 0%,
+    rgba(192, 192, 245, 0.1) 33.1%,
+    rgba(218, 203, 246, 0.2) 90%
+  );
 }
 
 .weather-icon {
@@ -46,9 +65,9 @@ li {
 }
 
 .temperature {
-  color: rgb(33, 33, 33);
+  color: #7551d2;
   font-size: 64px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1;
 }
 
@@ -70,16 +89,18 @@ li {
   text-transform: capitalize;
 }
 .weather-forecast {
-  margin-top: 25px;
+  margin-top: 37px;
   text-align: center;
 }
 .weather-forecast-day {
   font-size: 18px;
   font-weight: 600;
+  color: #4f5356;
 }
 .weather-forecast-temperatures {
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
+  color: #7551d2;
 }
 .weather-forecast-min-temperature {
   opacity: 0.7;
@@ -87,4 +108,5 @@ li {
 
 .coder {
   text-align: center;
+  font-size: 14px;
 }

@@ -122,7 +122,6 @@ function formatDay(timestamp) {
 function showForecast(response) {
   let forecast = response.data.daily;
   let forecastData = document.querySelector("#weather-forecast");
-  let days = ["Sun", "Mon", "Tue", "Wen"];
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
