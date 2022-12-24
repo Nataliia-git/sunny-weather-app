@@ -65,9 +65,9 @@ function showWeather(response) {
   let currentCity = response.data.city;
   let currentCityValue = document.querySelector("#city");
   currentCityValue.innerHTML = currentCity;
-  let temperature = Math.round(response.data.temperature.current);
+  celsiusTemperature = response.data.temperature.current;
   let temperatureValue = document.querySelector("#temperature");
-  temperatureValue.innerHTML = temperature;
+  temperatureValue.innerHTML = Math.round(celsiusTemperature);
   let wind = Math.round(response.data.wind.speed);
   let windValue = document.querySelector("#wind");
   windValue.innerHTML = `Wind: ${wind} km/h`;
