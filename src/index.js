@@ -87,6 +87,8 @@ function showWeather(response) {
   conditionDescriptionValue.innerHTML = `${conditionDescription}`;
   let icon = document.querySelector("#icon");
   icon.setAttribute("src", response.data.condition.icon_url);
+
+  getForecast(response.data.coordinates);
 }
 
 function getPosition(event) {
