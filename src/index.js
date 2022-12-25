@@ -38,10 +38,10 @@ function showTemperature(response) {
   temperatureValue.innerHTML = Math.round(celsiusTemperature);
   let wind = Math.round(response.data.wind.speed);
   let windValue = document.querySelector("#wind");
-  windValue.innerHTML = `Wind: ${wind} km/h`;
+  windValue.innerHTML = `${wind} km/h`;
   let humidity = response.data.temperature.humidity;
   let humidityValue = document.querySelector("#humidity");
-  humidityValue.innerHTML = `Humidity: ${humidity}%`;
+  humidityValue.innerHTML = `${humidity}%`;
   let conditionDescription = response.data.condition.description;
   let conditionDescriptionValue = document.querySelector("#conditions");
   conditionDescriptionValue.innerHTML = `${conditionDescription}`;
@@ -78,10 +78,10 @@ function showWeather(response) {
   temperatureValue.innerHTML = Math.round(celsiusTemperature);
   let wind = Math.round(response.data.wind.speed);
   let windValue = document.querySelector("#wind");
-  windValue.innerHTML = `Wind: ${wind} km/h`;
+  windValue.innerHTML = `${wind} km/h`;
   let humidity = response.data.temperature.humidity;
   let humidityValue = document.querySelector("#humidity");
-  humidityValue.innerHTML = `Humidity: ${humidity}%`;
+  humidityValue.innerHTML = `${humidity}%`;
   let conditionDescription = response.data.condition.description;
   let conditionDescriptionValue = document.querySelector("#conditions");
   conditionDescriptionValue.innerHTML = `${conditionDescription}`;
